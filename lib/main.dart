@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'screens/home_screen.dart';
-import 'testProject.dart';
-import 'testProject2.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,25 +9,24 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+ 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme:ThemeData(
+      title: 'Portfolio',
+      theme: ThemeData(
   primaryColor: Colors.teal,  // Top color (e.g., app bar)
   scaffoldBackgroundColor: Colors.blueGrey.shade900, // Bottom/background color
-  colorScheme: ColorScheme.dark(
+  colorScheme:const ColorScheme.dark(
     primary: Colors.teal,
     secondary: Colors.amberAccent,
   ),
-  textTheme: TextTheme(
+  textTheme:const TextTheme(
     bodyMedium: TextStyle(color: Colors.white70),
     headlineSmall: TextStyle(color: Colors.tealAccent),
   ),
 ),
      home: 
-     //Another_Page(),
      const HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
